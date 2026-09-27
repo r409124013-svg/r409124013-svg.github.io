@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raghad Abu Aziz - Full-Stack Software Engineer & Computer Systems Engineer. Portfolio showcasing software architecture, databases, web applications, and embedded IoT systems.">
+  <title>Raghad Abu Aziz | Full-Stack Software Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <span class="logo-code">&lt;</span><span class="logo-text">Raghad</span><span class="logo-accent">.Dev</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle Dark/Light Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary">Get In Touch</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="btn-icon mobile-only" aria-label="Open mobile menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-wrapper">
+            <span class="status-indicator"></span>
+            <span class="badge-text">Available for Full-Stack & Software Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Raghad Abu Aziz</span>
+            <br>
+            <span class="sub-hero-title">Full-Stack Software Engineer</span>
+          </h1>
+
+          <p class="hero-description">
+            Computer Systems Engineering graduate passionate about bridging robust backend architectures, 
+            normalized database engineering (PostgreSQL/SQL), and interactive responsive web experiences. 
+            From distributed web systems to embedded hardware solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+            <button class="btn btn-ghost copy-email-btn" id="copy-email-hero" data-email="r409124013@gmail.com" title="Copy Email to Clipboard">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-text">Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="social-bar">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/r409124013-svg" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/raghad-salama-abu-aziz-b9b3093b0" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:r409124013@gmail.com" class="social-link" title="Send Direct Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Highlights Box -->
+        <div class="hero-visual">
+          <div class="code-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">engineer_profile.json</span>
+            </div>
+            <pre class="terminal-body"><code>{
+  <span class="token-key">"name"</span>: <span class="token-str">"Raghad Abu Aziz"</span>,
+  <span class="token-key">"role"</span>: <span class="token-str">"Full-Stack & Systems Engineer"</span>,
+  <span class="token-key">"education"</span>: <span class="token-str">"B.Sc. Computer Systems Engineering"</span>,
+  <span class="token-key">"duration"</span>: <span class="token-str">"5-Year Rigorous Engineering"</span>,
+  <span class="token-key">"core_focus"</span>: [
+    <span class="token-str">"Full-Stack Web Architectures"</span>,
+    <span class="token-str">"Scalable Relational Databases (3NF/SQL)"</span>,
+    <span class="token-str">"RESTful API & RBAC Security"</span>,
+    <span class="token-str">"Embedded IoT Systems (C++/Arduino)"</span>
+  ],
+  <span class="token-key">"status"</span>: <span class="token-str">"Ready for Impact 🚀"</span>
+}</code></pre>
+          </div>
+
+          <!-- Mini Metrics -->
+          <div class="hero-metrics-grid">
+            <div class="metric-card">
+              <span class="metric-num">5</span>
+              <span class="metric-label">Years of Engineering Study</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">10+</span>
+              <span class="metric-label">Complex Projects Completed</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">21</span>
+              <span class="metric-label">Tables 3NF Capstone Schema</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">WHO I AM</span>
+          <h2 class="section-title">Bridging Systems Rigor with Modern Full-Stack Development</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3 class="about-subheading">Engineering Mindset & Craftsmanship</h3>
+            <p>
+              I am a <strong>Computer Systems Engineer</strong> equipped with a solid 5-year foundation covering the entire computational spectrum — from low-level microcontrollers, circuit logic, and hardware interfacing to high-level distributed web architectures, normalized relational databases, and modern front-end user experiences.
+            </p>
+            <p>
+              My signature capstone work, <strong>The Buzoor Educational Platform</strong>, demonstrated my capacity to design enterprise-grade database schemas (21 normalized tables in PostgreSQL, JSONB snapshot integrity, RBAC security, analytical views, and adaptive assessment algorithms) coupled with robust API architecture.
+            </p>
+            <p>
+              Whether crafting responsive web client interfaces, structuring high-performance backend pipelines in Python, PHP, and Java, or prototyping smart IoT micro-systems, I strive for clean architecture, reliable data modeling, and measurable real-world utility.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <div>
+                  <strong>Data Integrity First:</strong> Skilled in ACID transactions, 3NF normalization, and defensive schema design.
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div>
+                  <strong>Full-Stack Versatility:</strong> Seamlessly writing frontend interfaces (HTML5/CSS3/JS) to backend APIs and SQL queries.
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🔬</div>
+                <div>
+                  <strong>Hardware & Software Synthesis:</strong> Hands-on experience with sensors, microcontrollers (Arduino), and low-level C++.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-card">
+            <h3 class="about-subheading">Engineering Highlights</h3>
+            <ul class="highlights-list">
+              <li>
+                <span class="highlight-bullet">✓</span>
+                <div>
+                  <strong>Graduation Capstone:</strong> "Buzoor" Adaptive Diagnostic & Remediation Learning Platform.
+                </div>
+              </li>
+              <li>
+                <span class="highlight-bullet">✓</span>
+                <div>
+                  <strong>Database Architecture:</strong> Advanced PostgreSQL modeling with 21 relational tables, JSONB audit logging, and analytic views.
+                </div>
+              </li>
+              <li>
+                <span class="highlight-bullet">✓</span>
+                <div>
+                  <strong>Object-Oriented Design:</strong> Full Java OOP Library Management System using inheritance, polymorphism, and modular catalogs.
+                </div>
+              </li>
+              <li>
+                <span class="highlight-bullet">✓</span>
+                <div>
+                  <strong>Embedded IoT Solutions:</strong> Ultrasonic Parking Assistance & RFID Access Control with Arduino C++.
+                </div>
+              </li>
+              <li>
+                <span class="highlight-bullet">✓</span>
+                <div>
+                  <strong>AI & Heuristics:</strong> Research & implementation of Intelligent Agents (PEAS formulation), 8-Queens problem, and AI in Healthcare.
+                </div>
+              </li>
+            </ul>
+
+            <div class="cta-box">
+              <h4>Interested in collaborating?</h4>
+              <p>Feel free to reach out via email or connect on professional networks.</p>
+              <a href="#contact" class="btn btn-sm btn-primary">Start a Conversation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">A comprehensive stack developed through rigorous computer engineering coursework and hands-on software development.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Frontend Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3>Frontend Development</h3>
+            </div>
+            <p class="category-desc">Crafting responsive, accessible, and high-performance user interfaces.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5 & Semantic Web</span>
+              <span class="skill-tag">Modern CSS3 / Flexbox / Grid</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Responsive & Mobile-First</span>
+              <span class="skill-tag">Bootstrap 5</span>
+              <span class="skill-tag">RTL Localization</span>
+              <span class="skill-tag">AJAX / Fetch API</span>
+              <span class="skill-tag">DOM Manipulation</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Backend & Languages</h3>
+            </div>
+            <p class="category-desc">Building maintainable business logic, micro-services, and REST endpoints.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Python (Scripting & Automation)</span>
+              <span class="skill-tag">Java (Enterprise OOP)</span>
+              <span class="skill-tag">PHP (Web Backend)</span>
+              <span class="skill-tag">C / C++ (Systems)</span>
+              <span class="skill-tag">RESTful API Architecture</span>
+              <span class="skill-tag">Auth & RBAC Roles</span>
+              <span class="skill-tag">Server-side Data Validation</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Data Architecture -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Databases & Architecture</h3>
+            </div>
+            <p class="category-desc">Designing robust, normalized, and performant data storage layers.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">3NF Database Normalization</span>
+              <span class="skill-tag">ERD Modeling</span>
+              <span class="skill-tag">Analytical Views & Aggregations</span>
+              <span class="skill-tag">JSONB Document Storage</span>
+              <span class="skill-tag">Data Integrity Constraints</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Embedded Systems & Hardware -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <h3>Embedded & Hardware</h3>
+            </div>
+            <p class="category-desc">Bridging logic code with real-world physical electronics and sensors.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Arduino Microcontrollers</span>
+              <span class="skill-tag">Ultrasonic Sensors (HC-SR04)</span>
+              <span class="skill-tag">RFID RC522 Interfacing</span>
+              <span class="skill-tag">Electronic Circuit Design</span>
+              <span class="skill-tag">Digital Logic Circuits</span>
+              <span class="skill-tag">Signal Analysis Basics</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Computer Science Foundations -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <h3>Core CS & Algorithms</h3>
+            </div>
+            <p class="category-desc">Fundamental engineering foundations ensuring scalable and clean code.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Object-Oriented Programming (OOP)</span>
+              <span class="skill-tag">Data Structures & Algorithms</span>
+              <span class="skill-tag">Distributed Systems Principles</span>
+              <span class="skill-tag">AI Search & Intelligent Agents</span>
+              <span class="skill-tag">Computer Networks</span>
+              <span class="skill-tag">Information Security</span>
+              <span class="skill-tag">Git Version Control</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools & Workflow -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Tools & Ecosystem</h3>
+            </div>
+            <p class="category-desc">Modern engineering development tooling and practices.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">NetBeans / Eclipse</span>
+              <span class="skill-tag">Arduino IDE</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Postman & API Testing</span>
+              <span class="skill-tag">Markdown & Documentation</span>
+              <span class="skill-tag">Windows / Linux CLI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ENGINEERING SHOWCASE</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">A collection of academic and practical projects spanning full-stack development, database architecture, embedded systems, and AI.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack & Web</button>
+          <button class="filter-btn" data-filter="databases">Databases & Architecture</button>
+          <button class="filter-btn" data-filter="embedded">Embedded & IoT</button>
+          <button class="filter-btn" data-filter="algorithms">OOP & AI</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Project Cards dynamically injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Journey & Education Section -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">EDUCATION & TIMELINE</span>
+          <h2 class="section-title">Academic & Engineering Journey</h2>
+          <p class="section-desc">The rigorous 5-year progression that shaped my full-stack and systems engineering mindset.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Year 5 — Graduation & Advanced Specialization</span>
+                <span class="timeline-year">Senior Year</span>
+              </div>
+              <h3 class="timeline-title">Buzoor Platform & Advanced Systems</h3>
+              <p class="timeline-desc">
+                Architected the complete database schema and software specification for "Buzoor", an educational diagnosis system with 21 PostgreSQL tables, JSONB audit logging, RBAC, and remediation workflows. Deepened knowledge in Distributed Systems, Mobile Systems, and Advanced Web Engineering.
+              </p>
+              <div class="timeline-tags">
+                <span>Distributed Systems</span>
+                <span>Advanced Web</span>
+                <span>PostgreSQL 3NF</span>
+                <span>Information Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Year 4 — AI & Microprocessors</span>
+                <span class="timeline-year">Senior Year 1</span>
+              </div>
+              <h3 class="timeline-title">Artificial Intelligence & Microprocessor Interfacing</h3>
+              <p class="timeline-desc">
+                Conducted deep exploration of search algorithms, Intelligent Agent formulations (PEAS), 8-Queens and adversarial games. Studied microprocessor architecture, analog/digital communications, and integrated digital circuits.
+              </p>
+              <div class="timeline-tags">
+                <span>AI Agents</span>
+                <span>Microprocessors</span>
+                <span>Analog & Digital Comm</span>
+                <span>Digital ICs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Year 3 — Web Development & Databases</span>
+                <span class="timeline-year">Junior Year</span>
+              </div>
+              <h3 class="timeline-title">Core Web Systems & Algorithms</h3>
+              <p class="timeline-desc">
+                Mastered relational database design, SQL querying, front-end web technologies (HTML, CSS, JavaScript, AJAX), data structures, control systems, and computer network architecture.
+              </p>
+              <div class="timeline-tags">
+                <span>Database Systems</span>
+                <span>Web Programming</span>
+                <span>Algorithms & Data Structures</span>
+                <span>Computer Networks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Year 2 — Object-Oriented Design & Electronics</span>
+                <span class="timeline-year">Sophomore Year</span>
+              </div>
+              <h3 class="timeline-title">Object-Oriented Java & Circuit Foundations</h3>
+              <p class="timeline-desc">
+                Engineered complex object-oriented software in Java (Library Management System with polymorphic catalogs). Hands-on electronic circuit analysis, logic gates, and data communications.
+              </p>
+              <div class="timeline-tags">
+                <span>Java OOP</span>
+                <span>Digital Logic</span>
+                <span>Electric Circuits</span>
+                <span>Statistics for Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="section-desc">I am currently open to full-time engineering roles, freelance opportunities, and collaborative software projects.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <h3 class="contact-heading">Contact Information</h3>
+            <p class="contact-sub">Feel free to connect directly through any of the channels below:</p>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-title">Direct Email</span>
+                <a href="mailto:r409124013@gmail.com" class="contact-val">r409124013@gmail.com</a>
+              </div>
+              <button class="btn-icon copy-email-btn" data-email="r409124013@gmail.com" title="Copy Email">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-title">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/raghad-salama-abu-aziz-b9b3093b0" target="_blank" rel="noopener noreferrer" class="contact-val">Connect on LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-title">GitHub Repositories</span>
+                <a href="https://github.com/r409124013-svg" target="_blank" rel="noopener noreferrer" class="contact-val">Explore Code on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="contact-heading">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required placeholder="e.g. Sarah Jenkins">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" required placeholder="name@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Project Opportunity / Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project, role, or collaboration idea..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal (Native HTML5 Dialog) -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <div class="modal-badges">
+          <span id="modal-category" class="modal-badge-cat">Category</span>
+        </div>
+        <button id="modal-close-btn" class="modal-close" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h2 id="modal-title" class="modal-title">Project Title</h2>
+        <p id="modal-subtitle" class="modal-subtitle">Project Subtitle</p>
+
+        <div id="modal-image-container" class="modal-image-box">
+          <img id="modal-img" src="" alt="Project Visual Preview">
+        </div>
+
+        <div class="modal-section">
+          <h3>Overview & Objectives</h3>
+          <p id="modal-desc">Detailed description...</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Key Engineering Achievements</h3>
+          <ul id="modal-highlights" class="modal-list">
+            <!-- Injected via JS -->
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack & Architecture</h3>
+          <div id="modal-stack" class="skill-tags">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a id="modal-code-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>View Source Code</span>
+          </a>
+          <button id="modal-close-secondary" class="btn btn-ghost">Close</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification element -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-code">&lt;</span><span class="logo-text">Raghad</span><span class="logo-accent">.Dev</span><span class="logo-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Crafting resilient systems, modern interfaces, and scalable architectures.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Raghad Abu Aziz. All rights reserved. Designed & Engineered with modern web standards.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
