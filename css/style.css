@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    RAGHAD ABU AZIZ - PORTFOLIO DESIGN SYSTEM
    Modern, Responsive, Accessible, and High-Performance
    ========================================================================== */
@@ -845,6 +845,29 @@ button {
   box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
+/* CandyStore Confectionery Themed Card */
+.project-card[data-id="candystore-ecommerce"] {
+  border-color: rgba(236, 72, 153, 0.25);
+}
+
+.project-card[data-id="candystore-ecommerce"]:hover {
+  border-color: rgba(236, 72, 153, 0.65);
+  box-shadow: 0 16px 36px rgba(236, 72, 153, 0.22), 0 0 25px rgba(236, 72, 153, 0.15);
+}
+
+.project-card[data-id="candystore-ecommerce"] .project-badge-overlay {
+  background: rgba(43, 17, 36, 0.88);
+  border-color: rgba(236, 72, 153, 0.5);
+  color: #fbcfe8;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.25);
+}
+
+.project-card[data-id="candystore-ecommerce"] .tech-pill:first-child {
+  background: rgba(236, 72, 153, 0.15);
+  border-color: rgba(236, 72, 153, 0.4);
+  color: #f472b6;
+}
+
 .project-thumb {
   position: relative;
   width: 100%;
@@ -947,6 +970,45 @@ button {
 
 .project-card:hover .view-details-link {
   color: var(--accent-cyan);
+}
+
+.live-demo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #10b981;
+  font-size: 0.775rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.15);
+}
+
+.live-demo-badge:hover {
+  background: rgba(16, 185, 129, 0.25);
+  border-color: #34d399;
+  color: #6ee7b7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse-live 1.8s infinite;
+}
+
+@keyframes pulse-live {
+  0% { transform: scale(0.9); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.9); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
 /* --------------------------------------------------

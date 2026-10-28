@@ -25,6 +25,46 @@ document.addEventListener('DOMContentLoaded', () => {
       codeLink: 'https://github.com/r409124013-svg'
     },
     {
+      id: 'electronics-store-ecommerce',
+      title: 'Full-Stack Electronics E-Commerce Platform',
+      subtitle: 'Pure PHP, Relational MySQL Architecture, Auth Security & Admin Control Panel',
+      category: 'fullstack',
+      categories: ['fullstack', 'databases'],
+      image: 'assets/images/electronics-store-preview.jpg',
+      shortDesc: 'A complete dynamic e-commerce web platform engineered in pure PHP and MySQL. Features secure session authentication, dynamic category filtering, shopping cart, checkout pipeline, user order tracking, and an administrative CRUD dashboard.',
+      overview: 'Electronics Store is a full-featured, responsive e-commerce web application developed with native PHP and relational MySQL. It delivers complete retail operations: interactive category filtering across 6 tech categories, dynamic 18-product catalog with high-resolution imagery, ACID-compliant checkout transactions, user order histories, and a dedicated admin management panel with real-time stock management and abandoned cart analytics.',
+      highlights: [
+        'Architected a normalized MySQL schema with 8 relational tables (products, categories, users, admins, orders, order_items, cart, contacts) utilizing foreign key constraints and cascade rules.',
+        'Engineered secure dual authentication systems (Customer & Administrator) using password_hash(PASSWORD_DEFAULT) and password_verify(), with session fixation protection via session_regenerate_id().',
+        'Developed end-to-end shopping cart and checkout transactions that migrate live cart records into permanent order_items with accurate historical price snapshots.',
+        'Built an administrative CRUD dashboard enabling inventory management, multi-format product image uploads, category modifications, and abandoned cart monitoring.',
+        'Designed a high-contrast Cyber Luxe & Electric Indigo theme with frosted glassmorphism navigation, responsive product grids, and sleek micro-interactions.'
+      ],
+      tags: ['PHP', 'MySQL', 'Session Auth', 'E-Commerce Architecture', 'CRUD System', 'Responsive UI/UX'],
+      codeLink: 'https://github.com/r409124013-svg',
+      demoLink: 'https://electronics-store.geekspath.com/'
+    },
+    {
+      id: 'candystore-ecommerce',
+      title: 'CandyStore — Artisanal Confectionery E-Commerce Platform',
+      subtitle: 'Native PHP, Sweet Pastel & Berry Luxe UI, Isolated MySQL DB & Admin Suite',
+      category: 'fullstack',
+      categories: ['fullstack', 'databases'],
+      image: 'assets/images/candystore-preview.jpg',
+      shortDesc: 'A boutique confectionery web storefront built with native PHP and an isolated MySQL database (`candystore_db`). Features sweet pastel glassmorphism UI, session-based customer cart & checkout, dynamic catalog filtering across 6 sweet categories, and complete administrative inventory management.',
+      overview: 'CandyStore is a custom-crafted artisanal confectionery e-commerce platform engineered in native PHP and MySQL. Operating on an isolated database schema (candystore_db), it delivers a delightful user experience with vibrant gourmet photography, responsive cards, multi-category browsing, real-time cart computations, seamless checkout to orders history, and an administrative control suite with live product CRUD, category management, and analytics.',
+      highlights: [
+        'Designed an isolated, normalized MySQL database (candystore_db) with 8 relational tables featuring foreign keys and referential integrity to run concurrently with other e-commerce backends.',
+        'Crafted a bespoke "Sweet Pastel & Berry Luxe" design system utilizing Google Fonts (Fredoka & Plus Jakarta Sans), frosted glass navigation, and micro-animations.',
+        'Engineered secure prepared-statement SQL queries across all storefront and admin operations, preventing SQL injection vulnerabilities.',
+        'Built full customer e-commerce flow: dynamic category filtering, single-click cart management, session validation, ACID-compliant checkout, and order history receipts.',
+        'Constructed an administrative management suite with live confectionery CRUD, dynamic image uploads, category management, and sales revenue analytics.'
+      ],
+      tags: ['🍬 Candy E-Commerce', 'Pure PHP', 'MySQL (candystore_db)', 'Sweet Pastel UI', 'Cart & Checkout', 'Admin Panel'],
+      codeLink: 'https://github.com/r409124013-svg',
+      demoLink: 'http://localhost/candyStore/index.php'
+    },
+    {
       id: 'ibtesam-shop',
       title: 'Ibtesam Plant Shop — E-Commerce Web Platform',
       subtitle: 'Modern Responsive Web Application with Full RTL Support',
@@ -188,6 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </span>
+            ${project.demoLink && !project.demoLink.includes('localhost') ? `
+              <a href="${project.demoLink}" target="_blank" rel="noopener noreferrer" class="live-demo-badge" onclick="event.stopPropagation()" title="Launch Live Platform">
+                <span class="live-dot"></span>
+                <span>Live Demo ⚡</span>
+              </a>
+            ` : ''}
           </div>
         </div>
       `;
@@ -231,6 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImg = document.getElementById('modal-img');
   const modalImgContainer = document.getElementById('modal-image-container');
   const modalCodeLink = document.getElementById('modal-code-link');
+  const modalDemoLink = document.getElementById('modal-demo-link');
 
   function openProjectModal(project) {
     modalTitle.textContent = project.title;
@@ -259,6 +306,14 @@ document.addEventListener('DOMContentLoaded', () => {
       modalCodeLink.style.display = 'inline-flex';
     } else {
       modalCodeLink.style.display = 'none';
+    }
+
+    // Live Demo link
+    if (project.demoLink && modalDemoLink) {
+      modalDemoLink.href = project.demoLink;
+      modalDemoLink.style.display = 'inline-flex';
+    } else if (modalDemoLink) {
+      modalDemoLink.style.display = 'none';
     }
 
     // Open native dialog
